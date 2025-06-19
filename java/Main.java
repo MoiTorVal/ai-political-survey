@@ -64,7 +64,7 @@ public class Main {
             String[] optionBlocks = optionsText.split("\"text\":");
             
             StringBuilder formattedQuestion = new StringBuilder();
-            formattedQuestion.append("\n").append(questionText).append("\n");
+            formattedQuestion.append(i).append(". ").append(questionText).append("\n");
             
             for (int j = 1; j < optionBlocks.length && j <= 4; j++) {
                 String optionBlock = optionBlocks[j];
@@ -73,8 +73,9 @@ public class Main {
                 String optionText = optionBlock.substring(optStart, optEnd);
                 
                 char letter = (char)('A' + j - 1);
-                formattedQuestion.append(letter).append(") ").append(optionText).append("\n");
+                formattedQuestion.append("   ").append(letter).append(") ").append(optionText).append("\n");
             }
+            formattedQuestion.append("\n");
             
             questions.add(formattedQuestion.toString());
         }
