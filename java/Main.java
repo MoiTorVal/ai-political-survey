@@ -7,7 +7,7 @@ public class Main {
         try {
             // 1. Display survey title
             System.out.println("=".repeat(50));
-            System.out.println("         Political Affiliation Survey");
+            System.out.println("Political Affiliation Survey");
             System.out.println("=".repeat(50));
             System.out.println();
 
