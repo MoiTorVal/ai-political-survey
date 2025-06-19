@@ -7,5 +7,3 @@ __pycache__/
 *.pkl
 venv/
 
-# Data (optional)
-data/responses.csv  # Exclude if CSV has sensitive data
