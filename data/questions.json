@@ -1,0 +1,271 @@
+{
+  "survey": {
+    "title": "Political Affiliation Survey",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What should be the government's top priority?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Economic growth and reducing taxes"
+          },
+          {
+            "letter": "B",
+            "text": "Social welfare and reducing inequality"
+          },
+          {
+            "letter": "C",
+            "text": "National security and law enforcement"
+          },
+          {
+            "letter": "D",
+            "text": "Environmental protection and climate action"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "How involved should the government be in the economy?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Minimal—let the free market decide"
+          },
+          {
+            "letter": "B",
+            "text": "Moderate—some regulation to protect workers and consumers"
+          },
+          {
+            "letter": "C",
+            "text": "Significant—government should play a major role in wealth redistribution"
+          },
+          {
+            "letter": "D",
+            "text": "It depends on the industry"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What is your stance on abortion?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Should be illegal in most or all cases"
+          },
+          {
+            "letter": "B",
+            "text": "Should be legal only in certain cases (e.g., rape, health risks)"
+          },
+          {
+            "letter": "C",
+            "text": "Should be legal in most or all cases"
+          },
+          {
+            "letter": "D",
+            "text": "The government should not be involved in this decision"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "How should the U.S. approach immigration?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Stricter enforcement, reduced immigration"
+          },
+          {
+            "letter": "B",
+            "text": "Balanced approach—secure borders but allow legal pathways"
+          },
+          {
+            "letter": "C",
+            "text": "More open immigration policies"
+          },
+          {
+            "letter": "D",
+            "text": "Focus on reforming the system without drastic increases or cuts"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What is your view on gun control?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Against new restrictions—protect Second Amendment rights"
+          },
+          {
+            "letter": "B",
+            "text": "Support moderate regulations (e.g., background checks)"
+          },
+          {
+            "letter": "C",
+            "text": "Support stricter laws (e.g., assault weapon bans)"
+          },
+          {
+            "letter": "D",
+            "text": "Local governments should decide"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "How should the U.S. handle climate change?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Market-based solutions, no heavy regulations"
+          },
+          {
+            "letter": "B",
+            "text": "Moderate policies (e.g., incentives for green energy)"
+          },
+          {
+            "letter": "C",
+            "text": "Aggressive government action (e.g., carbon taxes, Green New Deal)"
+          },
+          {
+            "letter": "D",
+            "text": "Climate change is not a major priority"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What is your stance on healthcare?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Private system with minimal government involvement"
+          },
+          {
+            "letter": "B",
+            "text": "Mixed public-private system (e.g., Obamacare)"
+          },
+          {
+            "letter": "C",
+            "text": "Universal government-run healthcare"
+          },
+          {
+            "letter": "D",
+            "text": "Other approach"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "How should the U.S. approach foreign policy?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Focus on military strength and American interests first"
+          },
+          {
+            "letter": "B",
+            "text": "Balance diplomacy and defense"
+          },
+          {
+            "letter": "C",
+            "text": "Emphasize global cooperation and humanitarian aid"
+          },
+          {
+            "letter": "D",
+            "text": "Avoid foreign entanglements as much as possible"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "What is your view on taxes?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Taxes should be lower for everyone"
+          },
+          {
+            "letter": "B",
+            "text": "Taxes should be higher on the wealthy"
+          },
+          {
+            "letter": "C",
+            "text": "Taxes should fund strong social programs"
+          },
+          {
+            "letter": "D",
+            "text": "The current system is mostly fine"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "How important is protecting LGBTQ+ rights?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Government should not be involved"
+          },
+          {
+            "letter": "B",
+            "text": "Some protections, but with limits"
+          },
+          {
+            "letter": "C",
+            "text": "Strong legal protections against discrimination"
+          },
+          {
+            "letter": "D",
+            "text": "It depends on the issue"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "What best describes your view on policing and criminal justice?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Support current policing levels, focus on law and order"
+          },
+          {
+            "letter": "B",
+            "text": "Reform police practices but keep strong enforcement"
+          },
+          {
+            "letter": "C",
+            "text": "Major changes (e.g., defunding, redirecting funds to social programs)"
+          },
+          {
+            "letter": "D",
+            "text": "Local communities should decide"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "What is your political party affiliation?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Progressive"
+          },
+          {
+            "letter": "B",
+            "text": "Conservative"
+          },
+          {
+            "letter": "C",
+            "text": "Libertarian"
+          },
+          {
+            "letter": "D",
+            "text": "Moderate"
+          }
+        ]
+      }
+    ]
+  }
+}
