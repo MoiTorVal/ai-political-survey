@@ -96,7 +96,7 @@ class PoliticalAffiliationClassifier:
         """
         X_engineered = X.copy()
         
-        # Create political leaning scores based on question types
+        # Create political leaning scores based on question type
         # Economic questions (Q1, Q2, Q9) - Conservative vs Progressive
         economic_questions = [0, 1, 8]  # 0-indexed
         X_engineered['economic_conservatism'] = X.iloc[:, economic_questions].apply(
@@ -125,6 +125,9 @@ class PoliticalAffiliationClassifier:
         X_engineered['econ_social_interaction'] = (
             X_engineered['economic_conservatism'] * X_engineered['social_conservatism']
         )
+        
+        # Fix column names to be all strings
+        X_engineered.columns = X_engineered.columns.astype(str)
         
         return X_engineered
     

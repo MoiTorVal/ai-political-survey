@@ -1,0 +1,10 @@
+{
+  "model_name": "logistic_regression",
+  "classes": [
+    "Conservative",
+    "Libertarian",
+    "Moderate",
+    "Progressive"
+  ],
+  "n_features": 12
+}

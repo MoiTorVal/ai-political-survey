@@ -25,6 +25,7 @@ class PoliticalAffiliationPredictor:
         self.feature_weights = None
         self.model_info = None
         self.question_texts = []
+        self.questions_data = []  # Store full question data including options
         
     def load_model(self):
         """Load the trained model and preprocessing components."""
@@ -56,6 +57,7 @@ class PoliticalAffiliationPredictor:
             with open(json_path, 'r') as f:
                 data = json.load(f)
                 self.question_texts = [q['question'] for q in data['survey']['questions']]
+                self.questions_data = data['survey']['questions']  # Store full question data
             return True
         except FileNotFoundError:
             print(f"Warning: {json_path} not found.")
@@ -96,6 +98,9 @@ class PoliticalAffiliationPredictor:
         X_engineered['econ_social_interaction'] = (
             X_engineered['economic_conservatism'] * X_engineered['social_conservatism']
         )
+        
+        # Fix column names to be all strings
+        X_engineered.columns = X_engineered.columns.astype(str)
         
         return X_engineered
     
@@ -285,8 +290,13 @@ def interactive_prediction():
     responses = []
     
     # Get responses for each question
-    for i, question in enumerate(predictor.question_texts, 1):
-        print(f"{i}. {question}")
+    for i, question_data in enumerate(predictor.questions_data, 1):
+        print(f"{i}. {question_data['question']}")
+        
+        # Display all options
+        for option in question_data['options']:
+            print(f"   {option['letter']}) {option['text']}")
+        print()
         
         while True:
             response = input("Your answer (A/B/C/D): ").strip().upper()
